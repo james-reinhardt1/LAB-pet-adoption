@@ -239,4 +239,24 @@ const pets = [
       type: "dino",
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
-  ];
+const rootDiv = document.getElementById["root"];
+
+  for (let i = 0; i < pets.length; i++) {
+    const pet=pets[i];
+    const cardString = `
+  <div class = "card">
+    <div class="pet-name">${pet.name}</div>
+    <div class="pet-color">${pet.color}</div>
+    <div class="pet-special-skill">${pet.specialSkill}</div>
+    <div class="pet-type">${pet.typeOfPet}</div>
+    <div class="pet-imageUrl"><img class=" ">${pet.imageUrl}</div>
+  </div>
+`;
+
+onst bootStrapCardString = `
+
+`
+    
+ //0 is initial value; stopping point; increments
+      //this creates a loop!!!
+console.log("is this working?");
