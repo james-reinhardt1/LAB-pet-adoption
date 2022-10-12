@@ -1,0 +1,15 @@
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px;
+  flex: 1 1 calc(33% - 40px);
+  display: flex;
+  justify-content: center;
+}
+
+.pet-image {
+  padding: 25px;
+}
