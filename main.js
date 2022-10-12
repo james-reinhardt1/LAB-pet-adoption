@@ -235,11 +235,11 @@ const pets = [
         id: 30,
       name: "Lucy",
       color: "Red",
-      specialSkill: "Doesn’t get weirded out by the word “moist.”",
+      specialSkill: "Doesnt get weirded out by the word “moist.”",
       type: "dino",
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
-const rootDiv = document.getElementById["root"];
+ const rootDiv = document.getElementById["root"];
 
   for (let i = 0; i < pets.length; i++) {
     const pet=pets[i];
@@ -253,10 +253,5 @@ const rootDiv = document.getElementById["root"];
   </div>
 `;
 
-onst bootStrapCardString = `
-
+const bootStrapCardString = `
 `
-    
- //0 is initial value; stopping point; increments
-      //this creates a loop!!!
-console.log("is this working?");
