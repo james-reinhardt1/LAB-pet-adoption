@@ -239,19 +239,21 @@ const pets = [
       type: "dino",
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
- const rootDiv = document.getElementById["root"];
+  ] 
+  const rootDiv = document.getElementById["root"];
 
   for (let i = 0; i < pets.length; i++) {
     const pet=pets[i];
-    const cardString = `
-  <div class = "card">
-    <div class="pet-name">${pet.name}</div>
-    <div class="pet-color">${pet.color}</div>
-    <div class="pet-special-skill">${pet.specialSkill}</div>
-    <div class="pet-type">${pet.typeOfPet}</div>
-    <div class="pet-imageUrl"><img class=" ">${pet.imageUrl}</div>
-  </div>
-`;
-
 const bootStrapCardString = `
-`
+<div class="card" style="width: 18rem;">
+  <img src="${pet.imageUrl}" class="card-img-top" alt="A picture of a ${pet.type}">
+  <div class="card-body">
+    <h5 class="card-title">"${pet.name}"</h5>
+    <p class="pet-color">${pet.color}></p>
+    <p class="card-text">${pet.specialSkill}</p>
+    <p class="pet-type">${pet.type}</p>
+  </div>
+</div>
+`;
+rootDiv.innerHTML+=bootStrapCardString;
+}
